@@ -15,17 +15,17 @@ class MetricTranslator {
     class func translateMetricName(metric: String) -> String {
         switch metric {
         case "weight":
-            return "Текущий вес"
+            return "текущий вес"
         case "shoulders":
-            return "Обхват плеча"
+            return "обхват плеча"
         case "chest":
-            return "Обхват под грудью"
+            return "обхват под грудью"
         case "waist":
-            return "Талия"
+            return "талия"
         case "stomach":
-            return "Живот"
+            return "живот"
         case "hips":
-            return "Ягодицы"
+            return "ягодицы"
         default:
            return metric
         }

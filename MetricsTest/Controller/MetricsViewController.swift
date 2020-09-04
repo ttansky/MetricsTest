@@ -88,9 +88,16 @@ class MetricsViewController: UIViewController {
     @IBAction func sendMetricsButtonPressed(_ sender: UIButton) {
         guard let metrics = metrics else { return }
         if self.metricsDictionary.count < metrics.arrayOfNames.count {
-            let alert = UIAlertController(title: "Введите все замеры", message: "", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Oк", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            for metric in metrics.arrayOfNames {
+                if self.metricsDictionary[metric] == nil {
+                    let alert = UIAlertController(title: "Введите \(MetricTranslator.translateMetricName(metric: metric))", message: "", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "Oк", style: UIAlertAction.Style.default, handler: nil))
+                    DispatchQueue.main.async {
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                    return
+                }
+            }
         } else {
             self.activityIndicator.startAnimating()
             NetworkService.sendMetrics(token: userToken!, metricId: metrics.id!, userMetrics: self.metricsDictionary) { (result, error) in
@@ -134,8 +141,10 @@ extension MetricsViewController: UITableViewDelegate {
         }
         alert.addAction(UIAlertAction(title: "Oк", style: .default, handler: { [weak alert] (_) in
             if let textField = alert?.textFields![0] {
-                self.metricsDictionary[metrics.arrayOfNames[indexPath.row]] = Int(textField.text!)
-                self.metricsTableView.reloadRows(at: [indexPath], with: .fade)
+                if !textField.text!.isEmpty {
+                    self.metricsDictionary[metrics.arrayOfNames[indexPath.row]] = Int(textField.text!)
+                    self.metricsTableView.reloadRows(at: [indexPath], with: .fade)
+                }
             }
         }))
         alert.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler: nil))
@@ -158,7 +167,7 @@ extension MetricsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MerticsTableViewCell") as! MerticsTableViewCell
         if let metrics = metrics {
-            cell.metricNameLabel.text = MetricTranslator.translateMetricName(metric: metrics.arrayOfNames[indexPath.row])
+            cell.metricNameLabel.text = MetricTranslator.translateMetricName(metric: metrics.arrayOfNames[indexPath.row]).capitalizingFirstLetter()
             if let value = metricsDictionary[metrics.arrayOfNames[indexPath.row]] {
                 if let value = value {
                     cell.metricValueLabel.text = "\(value)"

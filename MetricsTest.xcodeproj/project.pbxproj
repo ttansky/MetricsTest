@@ -19,6 +19,7 @@
 		76B5E06525013A5D00F530BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B5E06325013A5D00F530BD /* Main.storyboard */; };
 		76B5E06725013A5F00F530BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B5E06625013A5F00F530BD /* Assets.xcassets */; };
 		76B5E06A25013A5F00F530BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B5E06825013A5F00F530BD /* LaunchScreen.storyboard */; };
+		76B80D4D2502B626005B1A81 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B80D4C2502B626005B1A81 /* Extensions.swift */; };
 		76D0F89E250144D1007C0BB3 /* MetricsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D0F89D250144D1007C0BB3 /* MetricsTableViewHeader.swift */; };
 		76D0F8A0250144EC007C0BB3 /* MetricsTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D0F89F250144EC007C0BB3 /* MetricsTableViewHeader.xib */; };
 		76D0F8A325014EFB007C0BB3 /* MerticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D0F8A125014EFB007C0BB3 /* MerticsTableViewCell.swift */; };
@@ -42,6 +43,7 @@
 		76B5E06625013A5F00F530BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76B5E06925013A5F00F530BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76B5E06B25013A5F00F530BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B80D4C2502B626005B1A81 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		76D0F89D250144D1007C0BB3 /* MetricsTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsTableViewHeader.swift; sourceTree = "<group>"; };
 		76D0F89F250144EC007C0BB3 /* MetricsTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetricsTableViewHeader.xib; sourceTree = "<group>"; };
 		76D0F8A125014EFB007C0BB3 /* MerticsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerticsTableViewCell.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				76847A7025027628005066A2 /* Endpoints.swift */,
+				76B80D4C2502B626005B1A81 /* Extensions.swift */,
 				76D6D74825028FE400C949DA /* HTTPMethods.swift */,
 				76847A6C250250F8005066A2 /* MetricTranslator.swift */,
 			);
@@ -269,6 +272,7 @@
 				76847A7125027628005066A2 /* Endpoints.swift in Sources */,
 				76B5E06025013A5D00F530BD /* SceneDelegate.swift in Sources */,
 				76847A7325027863005066A2 /* ErrorAlertService.swift in Sources */,
+				76B80D4D2502B626005B1A81 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
