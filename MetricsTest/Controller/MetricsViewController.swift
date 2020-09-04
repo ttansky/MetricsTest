@@ -133,10 +133,14 @@ class MetricsViewController: UIViewController {
 extension MetricsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alert = UIAlertController(title: "Введите ваши замеры", message: "", preferredStyle: .alert)
         guard let metrics = self.metrics else { return }
+        let alert = UIAlertController(title: "\(MetricTranslator.translateMetricName(metric: metrics.arrayOfNames[indexPath.row]).capitalizingFirstLetter())", message: "", preferredStyle: .alert)
         alert.addTextField { (textField) in
-            textField.placeholder = MetricTranslator.translateMetricName(metric: metrics.arrayOfNames[indexPath.row])
+            if let passedValue = self.metricsDictionary[metrics.arrayOfNames[indexPath.row]] {
+                if let value = passedValue {
+                    textField.text = "\(value)"
+                }
+            }
             textField.keyboardType = .numberPad
         }
         alert.addAction(UIAlertAction(title: "Oк", style: .default, handler: { [weak alert] (_) in
