@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76847A66250224F7005066A2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76847A65250224F7005066A2 /* NetworkService.swift */; };
+		76847A6D250250F8005066A2 /* MetricTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76847A6C250250F8005066A2 /* MetricTranslator.swift */; };
+		76847A6F250272B1005066A2 /* MetricsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76847A6E250272B1005066A2 /* MetricsModel.swift */; };
+		76847A7125027628005066A2 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76847A7025027628005066A2 /* Endpoints.swift */; };
+		76847A7325027863005066A2 /* ErrorAlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76847A7225027863005066A2 /* ErrorAlertService.swift */; };
+		76847A77250284AD005066A2 /* WeekDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76847A76250284AD005066A2 /* WeekDayModel.swift */; };
 		76B5E05E25013A5D00F530BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B5E05D25013A5D00F530BD /* AppDelegate.swift */; };
 		76B5E06025013A5D00F530BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B5E05F25013A5D00F530BD /* SceneDelegate.swift */; };
-		76B5E06225013A5D00F530BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B5E06125013A5D00F530BD /* ViewController.swift */; };
+		76B5E06225013A5D00F530BD /* MetricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B5E06125013A5D00F530BD /* MetricsViewController.swift */; };
 		76B5E06525013A5D00F530BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B5E06325013A5D00F530BD /* Main.storyboard */; };
 		76B5E06725013A5F00F530BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B5E06625013A5F00F530BD /* Assets.xcassets */; };
 		76B5E06A25013A5F00F530BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B5E06825013A5F00F530BD /* LaunchScreen.storyboard */; };
+		76D0F89E250144D1007C0BB3 /* MetricsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D0F89D250144D1007C0BB3 /* MetricsTableViewHeader.swift */; };
+		76D0F8A0250144EC007C0BB3 /* MetricsTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D0F89F250144EC007C0BB3 /* MetricsTableViewHeader.xib */; };
+		76D0F8A325014EFB007C0BB3 /* MerticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D0F8A125014EFB007C0BB3 /* MerticsTableViewCell.swift */; };
+		76D0F8A425014EFB007C0BB3 /* MerticsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D0F8A225014EFB007C0BB3 /* MerticsTableViewCell.xib */; };
+		76D6D74725028A1100C949DA /* FailureResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D6D74625028A1100C949DA /* FailureResponseHandler.swift */; };
+		76D6D74925028FE400C949DA /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D6D74825028FE400C949DA /* HTTPMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76847A65250224F7005066A2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		76847A6C250250F8005066A2 /* MetricTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricTranslator.swift; sourceTree = "<group>"; };
+		76847A6E250272B1005066A2 /* MetricsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsModel.swift; sourceTree = "<group>"; };
+		76847A7025027628005066A2 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		76847A7225027863005066A2 /* ErrorAlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertService.swift; sourceTree = "<group>"; };
+		76847A76250284AD005066A2 /* WeekDayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayModel.swift; sourceTree = "<group>"; };
 		76B5E05A25013A5D00F530BD /* MetricsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetricsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B5E05D25013A5D00F530BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76B5E05F25013A5D00F530BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76B5E06125013A5D00F530BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76B5E06125013A5D00F530BD /* MetricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsViewController.swift; sourceTree = "<group>"; };
 		76B5E06425013A5D00F530BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76B5E06625013A5F00F530BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76B5E06925013A5F00F530BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76B5E06B25013A5F00F530BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76D0F89D250144D1007C0BB3 /* MetricsTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsTableViewHeader.swift; sourceTree = "<group>"; };
+		76D0F89F250144EC007C0BB3 /* MetricsTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetricsTableViewHeader.xib; sourceTree = "<group>"; };
+		76D0F8A125014EFB007C0BB3 /* MerticsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerticsTableViewCell.swift; sourceTree = "<group>"; };
+		76D0F8A225014EFB007C0BB3 /* MerticsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerticsTableViewCell.xib; sourceTree = "<group>"; };
+		76D6D74625028A1100C949DA /* FailureResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureResponseHandler.swift; sourceTree = "<group>"; };
+		76D6D74825028FE400C949DA /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +61,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76847A7825028603005066A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76B5E06125013A5D00F530BD /* MetricsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76847A792502861C005066A2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				76847A65250224F7005066A2 /* NetworkService.swift */,
+				76847A7225027863005066A2 /* ErrorAlertService.swift */,
+				76D6D74625028A1100C949DA /* FailureResponseHandler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		76847A7A2502863F005066A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76847A6E250272B1005066A2 /* MetricsModel.swift */,
+				76847A76250284AD005066A2 /* WeekDayModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		76847A7B2502865D005066A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76847A7D2502868D005066A2 /* MetricsTableViewHeader */,
+				76847A7C2502867D005066A2 /* MerticsTableViewCell */,
+				76B5E06325013A5D00F530BD /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76847A7C2502867D005066A2 /* MerticsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				76D0F8A125014EFB007C0BB3 /* MerticsTableViewCell.swift */,
+				76D0F8A225014EFB007C0BB3 /* MerticsTableViewCell.xib */,
+			);
+			path = MerticsTableViewCell;
+			sourceTree = "<group>";
+		};
+		76847A7D2502868D005066A2 /* MetricsTableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				76D0F89D250144D1007C0BB3 /* MetricsTableViewHeader.swift */,
+				76D0F89F250144EC007C0BB3 /* MetricsTableViewHeader.xib */,
+			);
+			path = MetricsTableViewHeader;
+			sourceTree = "<group>";
+		};
+		76847A7E250286CA005066A2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				76847A7025027628005066A2 /* Endpoints.swift */,
+				76D6D74825028FE400C949DA /* HTTPMethods.swift */,
+				76847A6C250250F8005066A2 /* MetricTranslator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		76847A7F250286F8005066A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76B5E06625013A5F00F530BD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		76847A8025028707005066A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76B5E06825013A5F00F530BD /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76847A812502871E005066A2 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				76B5E05D25013A5D00F530BD /* AppDelegate.swift */,
+				76B5E05F25013A5D00F530BD /* SceneDelegate.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
 		76B5E05125013A5D00F530BD = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +170,14 @@
 		76B5E05C25013A5D00F530BD /* MetricsTest */ = {
 			isa = PBXGroup;
 			children = (
-				76B5E05D25013A5D00F530BD /* AppDelegate.swift */,
-				76B5E05F25013A5D00F530BD /* SceneDelegate.swift */,
-				76B5E06125013A5D00F530BD /* ViewController.swift */,
-				76B5E06325013A5D00F530BD /* Main.storyboard */,
-				76B5E06625013A5F00F530BD /* Assets.xcassets */,
-				76B5E06825013A5F00F530BD /* LaunchScreen.storyboard */,
+				76847A812502871E005066A2 /* Startup */,
+				76847A792502861C005066A2 /* Services */,
+				76847A7A2502863F005066A2 /* Models */,
+				76847A7825028603005066A2 /* Controller */,
+				76847A7E250286CA005066A2 /* Helpers */,
+				76847A7B2502865D005066A2 /* Views */,
+				76847A7F250286F8005066A2 /* Resources */,
+				76847A8025028707005066A2 /* Supporting Files */,
 				76B5E06B25013A5F00F530BD /* Info.plist */,
 			);
 			path = MetricsTest;
@@ -127,6 +243,8 @@
 			files = (
 				76B5E06A25013A5F00F530BD /* LaunchScreen.storyboard in Resources */,
 				76B5E06725013A5F00F530BD /* Assets.xcassets in Resources */,
+				76D0F8A0250144EC007C0BB3 /* MetricsTableViewHeader.xib in Resources */,
+				76D0F8A425014EFB007C0BB3 /* MerticsTableViewCell.xib in Resources */,
 				76B5E06525013A5D00F530BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +256,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76B5E06225013A5D00F530BD /* ViewController.swift in Sources */,
+				76D6D74725028A1100C949DA /* FailureResponseHandler.swift in Sources */,
+				76847A77250284AD005066A2 /* WeekDayModel.swift in Sources */,
+				76B5E06225013A5D00F530BD /* MetricsViewController.swift in Sources */,
+				76847A6D250250F8005066A2 /* MetricTranslator.swift in Sources */,
 				76B5E05E25013A5D00F530BD /* AppDelegate.swift in Sources */,
+				76D0F8A325014EFB007C0BB3 /* MerticsTableViewCell.swift in Sources */,
+				76D6D74925028FE400C949DA /* HTTPMethods.swift in Sources */,
+				76D0F89E250144D1007C0BB3 /* MetricsTableViewHeader.swift in Sources */,
+				76847A6F250272B1005066A2 /* MetricsModel.swift in Sources */,
+				76847A66250224F7005066A2 /* NetworkService.swift in Sources */,
+				76847A7125027628005066A2 /* Endpoints.swift in Sources */,
 				76B5E06025013A5D00F530BD /* SceneDelegate.swift in Sources */,
+				76847A7325027863005066A2 /* ErrorAlertService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +415,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55CQ7XM2HV;
 				INFOPLIST_FILE = MetricsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +434,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55CQ7XM2HV;
 				INFOPLIST_FILE = MetricsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
